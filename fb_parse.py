@@ -24,5 +24,6 @@ if __name__=="__main__":
     # Main thread
     inputFile=open("comments.txt","rb")
     comment_input=inputFile.read()
+    inputFile.close()
     emails=parse(comment_input) 
     print emails

@@ -26,4 +26,6 @@ if __name__=="__main__":
     comment_input=inputFile.read()
     inputFile.close()
     emails=parse(comment_input) 
-    print emails
+    for email in emails:
+        print email
+
